@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".NoteActivity">
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_edit"
+        android:gravity="start|top"
+        android:padding="4dp"
+        android:textColor="#1e1e1e" />
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/pri0"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/pri0"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/pri0"/>
+        <RadioButton
+            android:layout_margin="8dp"
+            android:id="@+id/pri1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/pri1"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/pri1"/>
+        <RadioButton
+            android:layout_margin="8dp"
+            android:id="@+id/pri2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/pri2"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/pri2"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/confirm" />
+
+
+</LinearLayout>
